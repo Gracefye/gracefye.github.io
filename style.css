@@ -4,6 +4,7 @@ a {
     text-decoration: none;
     color: #5A4A42;
 }
+
 a:hover {
     color: #FAF0E4;
 }
@@ -18,6 +19,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    word-spacing: 5px;
     font-size: 3rem;
     font-weight: 700;
     color: #FF8551;
@@ -148,7 +150,8 @@ h3 {
     justify-content: center;
 }
 
-.combo-list img, .menu-list img {
+.combo-list img,
+.menu-list img {
     width: 80%;
     height: auto;
     object-fit: cover;
@@ -173,7 +176,7 @@ h3 {
 }
 
 
-.menu-list > div {
+.menu-list>div {
     position: relative;
     display: flex;
     width: 100%;
@@ -188,14 +191,14 @@ h3 {
 
 .gallery-list {
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .gallery-list img {
-height: 500px;
-width: auto;
-object-fit: cover;
-flex: 1.6;
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    flex: 1.6;
 }
 
 .gallery-list div {
@@ -220,10 +223,11 @@ flex: 1.6;
     width: 100%;
     grid-template-rows: 40px 40px;
     padding-left: 10%;
-    
+
 }
 
-.location-list p, .location-list a {
+.location-list p,
+.location-list a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -242,6 +246,7 @@ flex: 1.6;
     border: none;
     border-radius: 20px;
 }
+
 .orange-button:hover {
     background-color: #ffa773;
 }
@@ -257,6 +262,7 @@ flex: 1.6;
     border: none;
     border-radius: 20px;
 }
+
 .blue-button:hover {
     background-color: #bdeff4;
 }
@@ -272,7 +278,7 @@ flex: 1.6;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 2.5fr 0.5fr;
     column-gap: 10%;
-    
+
 }
 
 .footer-content a {
@@ -359,6 +365,33 @@ flex: 1.6;
     background-image: url(./images/icons/media-instagram.png);
 }
 
+
+/* about page */
+
+#story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF0E4;
+    padding: 5%;
+}
+
+#story img {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+}
+
+#story p {
+    color: #5A4A42;
+}
+
+.pageheading-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
 /* menu page */
 
 #menu-special {
@@ -367,10 +400,11 @@ flex: 1.6;
     flex-direction: column;
     align-items: center;
     padding: 2% 0 5%;
-    
+
 }
 
-#menu-special h2, #menu-special i {
+#menu-special h2,
+#menu-special i {
     display: flex;
     margin-right: 10px;
     align-items: center;
@@ -382,7 +416,6 @@ flex: 1.6;
     flex-direction: column;
     padding: 3% 0 5%;
 }
-
 
 .menu-img {
     width: 100%;
@@ -397,7 +430,6 @@ flex: 1.6;
     align-items: end;
     row-gap: 40px;
     margin-top: 5%;
-
 }
 
 .combo>img {
@@ -410,11 +442,11 @@ flex: 1.6;
 .combo-info {
     grid-column: span 2;
     color: #5A4A42;
-
 }
 
 
-.combo-title, .combo-price {
+.combo-title,
+.combo-price {
     font-size: 1.2rem;
     font-weight: 500;
     color: #FF8551;
@@ -455,7 +487,8 @@ flex: 1.6;
     margin: 0;
 }
 
-.menu h2, .menu i {
+.menu h2,
+.menu i {
     display: flex;
     margin-right: 10px;
     align-items: center;
@@ -466,32 +499,142 @@ flex: 1.6;
 }
 
 
+/* Gallery page */
 
+#gallery-main {
+    background-color: #FAF0E4;
+    padding: 3% 0 5%;
+}
 
-/* about page */
+.gallery-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+}
 
+.img-list a img {
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+}
 
+/* Location page */
 
-#story {
+.location-map {
+    background-color: #FAF0E4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FAF0E4;
-    padding: 5%;
+    padding: 2% 0 5%;
+}
+
+.location-map a img {
+    width: 100%;
 }
 
 
-#story img {
-    float: left;
+.contact-card {
+    display: flex;
+    background-color: #FFDEDE;
+    justify-content: space-around;
+    padding: 3% 0;
+}
+
+.contact-card img {
+    float: right;
     width: 30%;
-    margin-right: 3%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-#story p {
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     color: #5A4A42;
 }
 
-.about-img {
+.contact-info p,
+.contact-info a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #5A4A42;
+}
+
+/* Contact page */
+.contact-form {
     width: 100%;
-    object-fit: contain;
+    background-color: #FAF0E4;
+    padding: 10px 0;
+}
+
+label {
+    float: left;
+    clear: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  .required-field::after {
+    content: "*";
+    color: red;
+  }
+
+  input,
+  textarea {
+    margin-top: 10px;
+    display: block;
+  }
+
+  input[type="submit"] {
+    margin-left: 110px;
+    background-color: #FF8551;
+    border: none;
+    padding: 2% 5%;
+    color: #fff;
+  }
+
+  @supports (display: grid) {
+    form {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 6em 1fr;
+      grid-gap: 1em;
+      gap: 1em;
+      min-width: 25em;
+      width: 80%;
+      padding: 1.5em
+    }
+
+    input[type="submit"] {
+      grid-column: 2 / 3;
+      width: 10em;
+      margin-left: 0;
+    }
+  }
+
+
+/* media query */
+
+@media only screen and (max-width: 1024px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    #story img {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .gallery-content {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+    }
+    
 }
