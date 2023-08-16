@@ -45,6 +45,7 @@ h3 {
     font-weight: 600;
     color: #9BCDD2;
 }
+
 p {
     font-size: 1.4vw;
 }
@@ -216,9 +217,12 @@ p {
     background-color: #FF8551;
     text-align: center;
     color: #fff;
-    font-size: 4vw;
     line-height: 6vw;
     flex: 1;
+}
+
+.gallery-text p {
+    font-size: 4vw;
 }
 
 .gallery-list div .blue-button {
@@ -599,13 +603,13 @@ tr:hover {
     margin: 0;
 }
 
-.menu-card p  span{
+.menu-card p span {
     font-size: 1.4vw;
     font-weight: 300;
     color: #382820;
     margin-left: 1vw;
     display: inline;
-    
+
 }
 
 .menu h2,
